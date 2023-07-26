@@ -6,10 +6,28 @@
         <TargetFramework>net6.0</TargetFramework>
         <OutputType>Exe</OutputType>
         <LangVersion>10</LangVersion>
-        <PackAsTool>true</PackAsTool>
-        <ToolCommandName>nuget-migrator</ToolCommandName>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageId>NugetPackagesMigrator</PackageId>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>nuget-migrator</ToolCommandName>
+        <Version>1.0.1</Version>
+        <Title>NugetPackagesMigrator</Title>
+        <Description>Dotnet tool which can migrate nuget packages from one package source to another</Description>
+        <PackageProjectUrl>https://github.com/Dzliera/NugetPackagesMigrator</PackageProjectUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>nuget</PackageTags>
+        <Authors>Giorgi Chkhikvadze</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="./README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+    
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.9.1" />
       <PackageReference Include="NuGet.Protocol" Version="6.6.1" />
