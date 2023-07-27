@@ -1,0 +1,7 @@
+[*]
+
+# ReSharper properties
+resharper_arguments_anonymous_function = named
+resharper_arguments_literal = named
+resharper_arguments_other = named
+resharper_csharp_wrap_arguments_style = chop_if_long
