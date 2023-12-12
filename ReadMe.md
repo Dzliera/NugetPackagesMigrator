@@ -19,7 +19,3 @@ Given we have 2 nuget sources configured,
 one named "source-repository" and other "target-repository", run following command:
 
     dotnet nuget-migrator --from source-repository --to target-repository
-
-## Notes :
-
-May Not work if package source is using custom nuget credential provider plugin
